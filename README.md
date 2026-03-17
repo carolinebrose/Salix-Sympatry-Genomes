@@ -45,7 +45,8 @@ samtools faidx Spurpurea_519_v5.0.fa
 
 
 
-### Data Processing for Salix popgen preliminary data
+### Data Processing for Salix popgen preliminary data - none of these things are uploaded to here yet
+
 #### Samples collected in the Bighorns, summer 2023 (Salix, n = 109) Plus Artemisia data from RM (n = 21) and Castilleja data to be resequenced (as a double check that samples weren't mixed up during earlier sequencing runs; n = 6) . Sequenced via Gregg Randolph at the UWyo GTL.
 
 Library prep notes found at [this link from the GTL](https://microcollaborative.atlassian.net/wiki/spaces/MICLAB/pages/2228584449/2ND+TANK+GBS+project+1BROSE)

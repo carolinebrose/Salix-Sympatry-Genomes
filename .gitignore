@@ -1,0 +1,8 @@
+#ignore these files/folders
+/VCF-sorted
+/VCF-all
+/RemovedDuplicates
+/MappedData
+/FlagstatReport-checkmapdata
+/TrimmedFastqs
+/Reports

@@ -42,6 +42,16 @@ samtools faidx Spurpurea_519_v5.0.fa
 - not entirely sure what the point is for the `thin.sh` for why this should be thinned out - this isn't in Sean's code, so I'm not going to deal with it, especially because I didn't want to troubleshoot the issues with it until we need to 
 
 
+##### nQuack for ploidy estimation #### 
+in `nQuack` directory, there is an R script `nQuack-prep.R` that holds the script for preparing data and running the program. Run this through the slurm script `Scripts/nQuack-prep.sh` because it seems to take ages and the salloc session times out every time. Might need to un-comment out the installation of devtools and nQuack, but it causes problems for me when I keep re-installing whilst fixing errors 
+
+
+
+
+
+
+
+
 
 
 

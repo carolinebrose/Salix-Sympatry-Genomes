@@ -45,34 +45,3 @@ samtools faidx Spurpurea_519_v5.0.fa
 ##### nQuack for ploidy estimation #### 
 in `nQuack` directory, there is an R script `nQuack-prep.R` that holds the script for preparing data and running the program. Run this through the slurm script `Scripts/nQuack-prep.sh` because it seems to take ages and the salloc session times out every time. Might need to un-comment out the installation of devtools and nQuack, but it causes problems for me when I keep re-installing whilst fixing errors 
 
-
-
-
-
-
-
-
-
-
-
-### Data Processing for Salix popgen preliminary data - none of these things are uploaded to here yet
-
-#### Samples collected in the Bighorns, summer 2023 (Salix, n = 109) Plus Artemisia data from RM (n = 21) and Castilleja data to be resequenced (as a double check that samples weren't mixed up during earlier sequencing runs; n = 6) . Sequenced via Gregg Randolph at the UWyo GTL.
-
-Library prep notes found at [this link from the GTL](https://microcollaborative.atlassian.net/wiki/spaces/MICLAB/pages/2228584449/2ND+TANK+GBS+project+1BROSE)
-1Brose1 has Eco3, 1Brose2 has Eco8, size selection for 300-500.
-
-Restriction enzymes EcoR1 and Mse1 used, so restriction overhangs for params files should be `AATT, TAA`.
- 
- - Params file for demultiplexing step is `params-Salix_Art_Cas.txt` in the `Scripts` directory.
-
-```
-cd /project/tanklab/cbrose1/Salix/PopGensampling
-```
-`Brose1_Demux.csv` has sample names and barcodes for demultiplexing. This one gzipped fastq has Salix, Artemisia, and Castilleja data in it, so we will demultiplex and then batch to separate the unrelated taxa from each other.
-params files should show that the allowed barcode mismatch is 1. This allows for more loci to be pulled out and fewer loci trapped in "no barcode match" land.
-
-Branching step after demultiplexing (ipyrad step 1) allows for the datasets to separate and cluster on their own. 
-	- `cusickii-reruns` branch gives just the 6 Castilleja sample reruns
-	- `Artemisia` branch gives the 21 Artemisia samples
-	- `Salix-only` branch is only Salix samples.

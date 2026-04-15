@@ -20,7 +20,7 @@ module load gcc/14.2.0 bwa/0.7.17 samtools/1.20
 cd /project/tanklab/cbrose1/Salix/SympatryGenomes/TrimmedFastqs
 
 # Define the path to your reference genome - LAZB
-#  MAKE SURE YOU INDEXED IT BEFORE THIS SCRIPT OR MAPPING WILL FAIL!!
+#	###MAKE SURE YOU INDEXED IT BEFORE THIS SCRIPT OR MAPPING WILL FAIL!!###
 #	module load gcc bwa
 #	bwa index /project/tanklab/cbrose1/Salix/PurpureaGenome/assembly/Spurpurea_519_v5.0.fa.gz
 
